@@ -1,14 +1,9 @@
-public abstract class Manusia {
-    String charac;
-    public abstract void berdiri();
-
-    public void oksigen(){
-        System.out.println("-Butuh Makanan");
-        System.out.println("- Butuh Oksigen");
-        System.out.println("- Butuh Air");
+public class Manusia extends MakhlukHidup {
+    private String Kaki;
+    public Manusia(String Kaki){
+        this.Kaki = Kaki;
     }
-
-    public Manusia(String charac){
-        this.charac = charac;
+    public void berdiri() {
+        System.out.println("Manusia berdiri dengan : " + Kaki);
     }
 }
